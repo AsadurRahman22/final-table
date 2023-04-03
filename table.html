@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            padding: 0px 10px;
+
+        }
+
+        nav>ul>li {
+            list-style: none;
+            margin: 10px;
+
+        }
+
+        a:hover {
+            background-color: aqua;
+
+        }
+
+        nav>ul {
+            display: flex;
+
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid royalblue;
+        }
+
+        thead>tr>th {
+            text-align: center;
+        }
+
+
+        tbody>tr>td.number {
+            text-align: center;
+        }
+
+        .T_Expense {
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Data-Table </h1>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Form</a></li>
+                    <li><a href="#">Table</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">About us</a></li>
+
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="number">1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td class="number">$ 1000</td>
+                <td rowspan="6">Company Founder</td>
+            </tr>
+            <tr>
+                <td class="number">2</td>
+                <td>Steve Jobs</td>
+                <td>Founder Apple</td>
+                <td class="number">$ 1200</td>
+
+            </tr>
+            <tr>
+                <td class="number">3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td class="number">$ 1100</td>
+
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td>Mar Zuckeberg</td>
+                <td>Founder Facebook</td>
+                <td class="number">$ 1300</td>
+
+            </tr>
+            <tr>
+
+                <td colspan="3" class="T_Expense"> <b>Total Expense</b> </td>
+
+                <td class="number"> <b>Total $ 1300</b> </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
